@@ -1,26 +1,50 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
+  html, body { scroll-padding-top: 5rem; overflow-x: hidden; }
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: 0 0% 100%;
+    --foreground: 0 0% 7%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 7%;
+    --primary: 38 91% 55%;
+    --primary-foreground: 0 0% 0%;
+    --secondary: 224 18% 14%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
+    --accent: 38 91% 55%;
+    --accent-foreground: 0 0% 0%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 38 91% 55%;
+    --radius: 0.25rem;
+    --hero-bg: 0 0% 0%;
+    --hero-foreground: 0 0% 100%;
+    --dark-section: 224 18% 14%;
+    --dark-section-foreground: 0 0% 100%;
+    --gradient-gold: linear-gradient(135deg, #E85C2B, #F5A623, #FFD04A);
+    --gradient-gold-hover: linear-gradient(135deg, #FFD04A, #F5A623, #E85C2B);
   }
+  * { @apply border-border; }
+  html { scroll-behavior: smooth; }
+  body { @apply bg-background text-foreground font-sans antialiased; font-feature-settings: "cv02","cv03","cv04","cv11"; }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .gradient-gold-text { background: var(--gradient-gold); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+  .gradient-gold-bg { background: var(--gradient-gold); }
+  .section-dark { @apply text-white; background-color: hsl(var(--dark-section)); }
+  .section-hero { @apply text-white; background-color: hsl(var(--hero-bg)); }
+  .btn-gold { background: var(--gradient-gold); @apply text-black font-semibold px-8 py-5 transition-all duration-300; }
+  .btn-gold:hover { background: var(--gradient-gold-hover); @apply shadow-lg shadow-orange-500/20 scale-[1.02]; }
+}
+
+@layer utilities {
+  .letter-spacing-wide { letter-spacing: 0.25em; }
+  .letter-spacing-tight { letter-spacing: -0.02em; }
 }

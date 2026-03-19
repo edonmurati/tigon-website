@@ -1,0 +1,49 @@
+<svg version="1.1" id="Layer_1" xmlns:x="ns_extend;" xmlns:i="ns_ai;" xmlns:graph="ns_graphs;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 360.6 85" style="enable-background:new 0 0 360.6 85;" xml:space="preserve">
+ <style type="text/css">
+  .st0{fill:#F25022;}
+	.st1{fill:#7FBA00;}
+	.st2{fill:#00A4EF;}
+	.st3{fill:#FFB900;}
+	.st4{fill:#1A1A1F;}
+ </style>
+ <metadata>
+  <sfw xmlns="ns_sfw;">
+   <slices>
+   </slices>
+   <sliceSourceBounds bottomLeftOrigin="true" height="85" width="360.6" x="224" y="35">
+   </sliceSourceBounds>
+  </sfw>
+ </metadata>
+ <g>
+  <g>
+   <g>
+    <path class="st0" d="M0,0h40.4v40.4H0V0z">
+    </path>
+    <path class="st1" d="M44.6,0H85v40.4H44.6V0z">
+    </path>
+    <path class="st2" d="M0,44.6h40.4V85H0V44.6z">
+    </path>
+    <path class="st3" d="M44.6,44.6H85V85H44.6V44.6z">
+    </path>
+   </g>
+  </g>
+  <g>
+   <path class="st4" d="M221.6,61.5h-9.2l-4.6-12.9h-20l-4.4,12.9h-9.2l19-50.8h9.5L221.6,61.5z M205.5,41.7l-7.1-20.3
+			c-0.2-0.7-0.4-1.7-0.7-3.2h-0.1c-0.2,1.3-0.4,2.4-0.7,3.2l-7,20.3H205.5z">
+   </path>
+   <path class="st4" d="M254.4,28.6L234.8,55h19.5v6.4h-31v-3.1l20-26.8h-18.1v-6.4h29.2V28.6z">
+   </path>
+   <path class="st4" d="M293,61.5h-8.2v-5.7h-0.1c-2.4,4.4-6.1,6.6-11.1,6.6c-8.6,0-12.9-5.1-12.9-15.4V25.2h8.2V46
+			c0,6.5,2.5,9.8,7.5,9.8c2.4,0,4.4-0.9,6-2.7c1.6-1.8,2.4-4.1,2.4-7.1V25.2h8.2V61.5z">
+   </path>
+   <path class="st4" d="M324.7,33c-1-0.8-2.4-1.2-4.3-1.2c-2.4,0-4.5,1.1-6.1,3.3s-2.4,5.2-2.4,9v17.4h-8.2V25.2h8.2v7.5h0.1
+			c0.8-2.6,2-4.5,3.7-6s3.5-2.1,5.6-2.1c1.5,0,2.6,0.2,3.4,0.7V33z">
+   </path>
+   <path class="st4" d="M360.6,45.6h-24.7c0.1,3.4,1.1,5.9,3.1,7.8c2,1.8,4.7,2.7,8.1,2.7c3.9,0,7.4-1.2,10.7-3.5v6.6
+			c-3.3,2.1-7.7,3.1-13.1,3.1c-5.3,0-9.5-1.6-12.6-4.9s-4.6-7.9-4.6-13.9c0-5.6,1.7-10.2,5-13.8c3.3-3.6,7.5-5.3,12.5-5.3
+			s8.8,1.6,11.5,4.8c2.7,3.2,4.1,7.6,4.1,13.3V45.6z M352.7,39.7c0-3-0.7-5.2-2.1-6.9c-1.4-1.6-3.3-2.5-5.7-2.5
+			c-2.4,0-4.4,0.9-6,2.6c-1.6,1.7-2.7,4-3,6.8H352.7z">
+   </path>
+  </g>
+ </g>
+</svg>
