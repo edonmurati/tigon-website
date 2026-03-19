@@ -1,8 +1,0 @@
-[phases.build]
-cmds = ["npm run build"]
-
-[phases.setup]
-nixPkgs = ["nodejs_22"]
-
-[start]
-cmd = "cp -r .next/static .next/standalone/.next/static && cp -r public .next/standalone/public && node .next/standalone/server.js"
