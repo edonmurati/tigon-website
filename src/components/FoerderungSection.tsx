@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const programs = [
   { name: "Digitalbonus Bayern", detail: "Bis zu €7.500 Zuschuss (50% der Kosten) für kleine Unternehmen. Monatliche Antragsfenster." },
-  { name: "MID NRW", detail: "Bis zu €15.000 Zuschuss für Digitalisierungsprojekte in Nordrhein-Westfalen." },
+  { name: "MID NRW", detail: "Bis zu €15.000 Zuschuss (50%) für die Entwicklung digitaler Produkte in NRW. Monatliches Losverfahren über NRW.BANK." },
   { name: "Weitere Länderprogramme", detail: "Viele Bundesländer bieten eigene Digitalisierungsförderungen. Wir prüfen Ihre Optionen." },
 ];
 
@@ -13,7 +13,7 @@ const FoerderungSection = () => (
     <div className="container mx-auto px-6">
       <motion.h2 initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.7 }}
         className="text-3xl md:text-5xl font-bold text-[hsl(var(--foreground))] max-w-3xl mb-6 leading-tight letter-spacing-tight">
-        Bis zu <span className="gradient-gold-text">50%</span> Ihrer Kosten werden gefördert.
+        Bis zu <span className="gradient-gold-text">50%</span> Ihrer Kosten können gefördert werden.
       </motion.h2>
       <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.15 }}
         className="text-[hsl(var(--muted-foreground))] text-base max-w-2xl mb-16 leading-relaxed">

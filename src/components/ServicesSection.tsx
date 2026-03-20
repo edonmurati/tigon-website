@@ -6,18 +6,24 @@ const serviceAreas = [
   {
     title: "Website-Erstellung & Redesign",
     subtitle: "Ihr digitales Aushängeschild",
-    items: ["Moderne Unternehmenswebsites", "Redesign veralteter Webauftritte", "Responsive Design für alle Geräte", "SEO-optimierte Struktur", "Schnelle Ladezeiten & Performance"],
-    result: "Ein Webauftritt, der Vertrauen schafft — und Kunden bringt."
+    price: "Ab €3.500",
+    delivery: "48–72 Stunden",
+    items: ["Moderne Unternehmenswebsites", "Redesign veralteter Webauftritte", "Responsive Design für alle Geräte", "SEO-optimierte Struktur & Meta-Tags", "Impressum & Datenschutz vorbereitet"],
+    result: "Wir bauen zuerst — Sie entscheiden danach. Festpreis, keine Stundensätze."
   },
   {
     title: "Web-App Entwicklung",
     subtitle: "Maßgeschneiderte Anwendungen",
-    items: ["Individuelle Web-Apps", "Kundenportale & Dashboards", "Dokumentenmanagement", "Buchungssysteme", "B2B Marktplätze"],
+    price: "€3.000–10.000",
+    delivery: "72 Stunden bis 2 Wochen",
+    items: ["Kundenportale & Dashboards", "Dokumentenmanagement", "Buchungssysteme", "B2B Marktplätze", "Individuelle Web-Apps"],
     result: "Produktionsreife Software. Festpreis. In Tagen, nicht Monaten."
   },
   {
     title: "Prozessautomatisierung & KI",
     subtitle: "Intelligente Workflows",
+    price: "Ab €3.000",
+    delivery: "1–2 Wochen",
     items: ["n8n Workflow-Automatisierung", "KI-gestützte Dokumentenverarbeitung", "API-Integrationen", "Automatisierte Reports", "DSGVO-konforme Datenverarbeitung"],
     result: "Weniger manuelle Arbeit. Mehr Kapazität für Ihr Kerngeschäft."
   },
@@ -37,7 +43,11 @@ const ServicesSection = () => (
             <div className="bg-[hsl(var(--card))] p-8 md:p-10 rounded-[11px] flex flex-col h-full">
               <div className="flex-1">
                 <span className="text-xs font-semibold uppercase tracking-wider text-[hsl(var(--primary))]/70 mb-2 block">{area.subtitle}</span>
-                <h3 className="text-xl md:text-2xl font-bold text-[hsl(var(--foreground))] mb-8">{area.title}</h3>
+                <h3 className="text-xl md:text-2xl font-bold text-[hsl(var(--foreground))] mb-4">{area.title}</h3>
+                <div className="flex items-baseline gap-4 mb-8">
+                  <span className="text-lg font-bold gradient-gold-text">{area.price}</span>
+                  <span className="text-xs text-[hsl(var(--muted-foreground))]">{area.delivery}</span>
+                </div>
                 <ul className="space-y-3">
                   {area.items.map((item) => (
                     <li key={item} className="flex items-start gap-3 text-sm text-[hsl(var(--muted-foreground))]">

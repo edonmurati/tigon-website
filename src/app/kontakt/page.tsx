@@ -19,6 +19,13 @@ const BRANCHEN = [
 
 const GROESSEN = ["1–5 Mitarbeiter", "6–20", "21–50", "51–200", "200+"];
 
+const SERVICEBEDARF = [
+  "Website (Erstellung oder Redesign)",
+  "Web-App (Portal, Dashboard, Tool)",
+  "Beides",
+  "Weiß ich noch nicht",
+];
+
 const PROJEKTTYPEN = [
   "Kundenportal",
   "Dashboard / Reporting",
@@ -56,6 +63,7 @@ type FormData = {
   email: string;
   telefon: string;
   unternehmen: string;
+  servicebedarf: string;
   // Step 2
   branche: string;
   groesse: string;
@@ -80,6 +88,7 @@ const initial: FormData = {
   email: "",
   telefon: "",
   unternehmen: "",
+  servicebedarf: "",
   branche: "",
   groesse: "",
   website: "",
@@ -101,6 +110,7 @@ function validateStep(step: number, d: FormData): string | null {
     if (!d.email.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(d.email))
       return "Bitte geben Sie eine gültige E-Mail-Adresse ein.";
     if (!d.unternehmen.trim()) return "Bitte geben Sie Ihr Unternehmen ein.";
+    if (!d.servicebedarf) return "Bitte wählen Sie, was Sie brauchen.";
   }
   if (step === 2) {
     if (!d.branche) return "Bitte wählen Sie Ihre Branche.";
@@ -177,6 +187,7 @@ export default function Kontakt() {
         email: formData.email,
         telefon: formData.telefon,
         unternehmen: formData.unternehmen,
+        servicebedarf: formData.servicebedarf,
         branche: formData.branche,
         groesse: formData.groesse,
         website: formData.website,
@@ -368,6 +379,23 @@ export default function Kontakt() {
                           placeholder="Firmenname"
                         />
                       </div>
+                    </div>
+                    <div>
+                      <label className={labelClass}>Was brauchen Sie? *</label>
+                      <select
+                        value={formData.servicebedarf}
+                        onChange={(e) => set("servicebedarf", e.target.value)}
+                        className={selectClass}
+                      >
+                        <option value="" disabled>
+                          Bitte wählen
+                        </option>
+                        {SERVICEBEDARF.map((s) => (
+                          <option key={s} value={s}>
+                            {s}
+                          </option>
+                        ))}
+                      </select>
                     </div>
                   </motion.div>
                 )}

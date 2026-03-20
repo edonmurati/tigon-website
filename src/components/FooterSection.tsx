@@ -11,7 +11,7 @@ const FooterSection = () => (
             <span className="text-white font-light text-[0.85em]">Automation</span>
           </span>
           <p className="text-[#9CA3AF] text-sm leading-relaxed mb-1">Produktionsreife Software für den Mittelstand.</p>
-          <p className="text-[#9CA3AF] text-sm leading-relaxed">Festpreis. DSGVO-konform. Förderfähig.</p>
+          <p className="text-[#9CA3AF] text-sm leading-relaxed">Festpreis. DSGVO-konform. Potenziell förderfähig.</p>
         </div>
         <div>
           <h4 className="text-[#9CA3AF] text-xs uppercase tracking-wider mb-6 font-semibold">Navigation</h4>

@@ -4,7 +4,7 @@ import { Shield, Lock, Server, FileCheck } from "lucide-react";
 
 const certifications = [
   { icon: "FileCheck", title: "DSGVO", status: "Konform", desc: "Vollständige Einhaltung der EU-Datenschutz-Grundverordnung" },
-  { icon: "Server", title: "EU-Hosting", status: "DE", desc: "Datenverarbeitung ausschließlich auf EU-Servern" },
+  { icon: "Server", title: "EU-Hosting", status: "DE", desc: "Datenverarbeitung auf EU-Servern (Vercel, EU-U.S. DPF zertifiziert)" },
   { icon: "Shield", title: "Datensicherheit", status: "AES-256", desc: "Verschlüsselung für gespeicherte und übertragene Daten" },
   { icon: "Lock", title: "AVV", status: "Bereit", desc: "Auftragsverarbeitungsverträge auf Anfrage verfügbar" },
 ];
@@ -68,7 +68,7 @@ export default function Sicherheit() {
       <section className="section-dark border-t border-white/10 py-10">
         <div className="mx-auto max-w-[1100px] px-6">
           <p className="text-white/40 text-xs leading-relaxed max-w-[700px]">
-            Alle Kundendaten werden ausschließlich auf EU-Servern verarbeitet. Wir stellen AVV (Auftragsverarbeitungsverträge) auf Anfrage bereit. Keine Datenübertragung in Drittländer.
+            Kundendaten werden auf EU-Servern verarbeitet. Unser Hosting-Anbieter (Vercel Inc.) ist unter dem EU-U.S. Data Privacy Framework zertifiziert. Wir stellen AVV (Auftragsverarbeitungsverträge) auf Anfrage bereit.
           </p>
         </div>
       </section>

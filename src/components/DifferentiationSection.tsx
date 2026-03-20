@@ -2,8 +2,9 @@
 import { motion } from "framer-motion";
 
 const rows = [
-  { label: "Preis", tigon: "€3.000–10.000 Festpreis", other: "Ab €25.000" },
-  { label: "Lieferzeit", tigon: "72 Stunden bis 2 Wochen", other: "3–6 Monate" },
+  { label: "Website", tigon: "Ab €3.500 — fertig in 48–72h", other: "Ab €5.000 — 4–8 Wochen" },
+  { label: "Web-App", tigon: "€3.000–10.000 Festpreis", other: "Ab €25.000" },
+  { label: "Lieferzeit", tigon: "48 Stunden bis 2 Wochen", other: "3–6 Monate" },
   { label: "Vorgehen", tigon: "Prototyp zuerst, dann entscheiden", other: "Beratung → Angebot → Vertrag → Projekt" },
   { label: "DSGVO", tigon: "Konform ab Tag 1", other: "\"Wird berücksichtigt\"" },
   { label: "Förderung", tigon: "Digitalbonus Bayern, MID NRW u.a.", other: "Selten thematisiert" },
