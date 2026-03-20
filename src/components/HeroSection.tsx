@@ -50,11 +50,11 @@ const HeroSection = () => (
         </motion.h1>
         <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.25 }}
           className="text-white/55 text-base leading-relaxed font-light mb-6 max-w-lg">
-          Festpreis €3.000–10.000. DSGVO-konform. Förderfähig über BAFA.
+          Festpreis €3.000–10.000. DSGVO-konform. Potenziell förderfähig.
         </motion.p>
         <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.35 }}
           className="text-white/40 text-sm font-light mb-10 max-w-md">
-          Wir bauen Web-Apps für den Mittelstand — in Tagen, nicht Monaten.
+          Websites, Web-Apps & Automatisierung für den Mittelstand — in Tagen, nicht Monaten.
         </motion.p>
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.45 }}
           className="flex flex-wrap gap-4 justify-center">
@@ -63,7 +63,7 @@ const HeroSection = () => (
         </motion.div>
         <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.6 }}
           className="flex flex-wrap items-center gap-5 mt-8 justify-center">
-          {["Festpreis — keine versteckten Kosten", "DSGVO-konform ab Tag 1", "Bis zu 50% BAFA-förderfähig"].map((t) => (
+          {["Festpreis — keine versteckten Kosten", "DSGVO-konform ab Tag 1", "Fördermittel-Check inklusive"].map((t) => (
             <span key={t} className="inline-flex items-center gap-1.5 text-white/50 text-xs tracking-wide">
               <CheckCircle className="w-3.5 h-3.5 text-[hsl(var(--primary))]/70" />{t}
             </span>

@@ -6,7 +6,7 @@ const rows = [
   { label: "Lieferzeit", tigon: "72 Stunden bis 2 Wochen", other: "3–6 Monate" },
   { label: "Vorgehen", tigon: "Prototyp zuerst, dann entscheiden", other: "Beratung → Angebot → Vertrag → Projekt" },
   { label: "DSGVO", tigon: "Konform ab Tag 1", other: "\"Wird berücksichtigt\"" },
-  { label: "Förderung", tigon: "BAFA/go-digital förderfähig", other: "Selten thematisiert" },
+  { label: "Förderung", tigon: "Digitalbonus Bayern, MID NRW u.a.", other: "Selten thematisiert" },
 ];
 
 const DifferentiationSection = () => (

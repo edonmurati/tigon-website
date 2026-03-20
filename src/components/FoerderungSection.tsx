@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 const programs = [
-  { name: "BAFA Digital Consulting Grants", detail: "Bis zu 50% für kleine, 30% für mittlere Unternehmen" },
-  { name: "KfW Digital & Innovation Credit", detail: "Kredite bis zu €7,5 Mio. für Digitalisierung" },
-  { name: "go-digital (BMWK)", detail: "Bis zu 80% der Beratungskosten gefördert" },
+  { name: "Digitalbonus Bayern", detail: "Bis zu €7.500 Zuschuss (50% der Kosten) für kleine Unternehmen. Monatliche Antragsfenster." },
+  { name: "MID NRW", detail: "Bis zu €15.000 Zuschuss für Digitalisierungsprojekte in Nordrhein-Westfalen." },
+  { name: "Weitere Länderprogramme", detail: "Viele Bundesländer bieten eigene Digitalisierungsförderungen. Wir prüfen Ihre Optionen." },
 ];
 
 const FoerderungSection = () => (
@@ -17,7 +17,7 @@ const FoerderungSection = () => (
       </motion.h2>
       <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.15 }}
         className="text-[hsl(var(--muted-foreground))] text-base max-w-2xl mb-16 leading-relaxed">
-        Kleine Unternehmen erhalten über BAFA-Förderprogramme bis zu 50% der Digitalisierungskosten erstattet. Wir unterstützen Sie beim Antrag.
+        Über Landesprogramme wie den Digitalbonus Bayern oder MID NRW können kleine Unternehmen bis zu 50% der Projektkosten erstattet bekommen. Wir prüfen Ihre Förderfähigkeit kostenlos.
       </motion.p>
       <div className="grid md:grid-cols-3 gap-6">
         {programs.map((p, i) => (

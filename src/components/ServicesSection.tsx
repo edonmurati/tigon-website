@@ -4,6 +4,12 @@ import Link from "next/link";
 
 const serviceAreas = [
   {
+    title: "Website-Erstellung & Redesign",
+    subtitle: "Ihr digitales Aushängeschild",
+    items: ["Moderne Unternehmenswebsites", "Redesign veralteter Webauftritte", "Responsive Design für alle Geräte", "SEO-optimierte Struktur", "Schnelle Ladezeiten & Performance"],
+    result: "Ein Webauftritt, der Vertrauen schafft — und Kunden bringt."
+  },
+  {
     title: "Web-App Entwicklung",
     subtitle: "Maßgeschneiderte Anwendungen",
     items: ["Individuelle Web-Apps", "Kundenportale & Dashboards", "Dokumentenmanagement", "Buchungssysteme", "B2B Marktplätze"],
@@ -24,7 +30,7 @@ const ServicesSection = () => (
         className="text-3xl md:text-5xl font-bold text-[hsl(var(--foreground))] mb-10 leading-tight letter-spacing-tight">
         Leistungen
       </motion.h2>
-      <div className="grid md:grid-cols-2 gap-8">
+      <div className="grid md:grid-cols-3 gap-8">
         {serviceAreas.map((area, i) => (
           <motion.div key={area.title} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-80px" }} transition={{ duration: 0.6, delay: i * 0.15 }}
             className="relative rounded-xl p-px" style={{ background: "linear-gradient(160deg, hsl(var(--primary) / 0.45), hsl(var(--primary) / 0.1) 35%, hsl(var(--border)) 55%, hsl(var(--primary) / 0.2))" }}>

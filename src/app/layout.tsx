@@ -3,10 +3,10 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Tigon Automation — Produktionsreife Software in 72 Stunden",
-  description: "Web-Apps für den Mittelstand. Festpreis €3.000–10.000. DSGVO-konform. Bis zu 50% BAFA-förderfähig.",
+  description: "Websites, Web-Apps & Automatisierung für den Mittelstand. Festpreis €3.000–10.000. DSGVO-konform. Potenziell förderfähig.",
   openGraph: {
     title: "Tigon Automation — Produktionsreife Software in 72 Stunden",
-    description: "Web-Apps für den Mittelstand. Festpreis. DSGVO-konform. Förderfähig.",
+    description: "Websites, Web-Apps & Automatisierung für den Mittelstand. Festpreis. DSGVO-konform.",
     url: "https://tigonautomation.de",
     siteName: "Tigon Automation",
     locale: "de_DE",
