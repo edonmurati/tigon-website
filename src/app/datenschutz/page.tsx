@@ -27,7 +27,9 @@ export default function Datenschutz() {
 
           <div><h2 className={h2}>6. Cookies</h2><p>Diese Website verwendet keine Tracking-Cookies oder Analyse-Tools von Drittanbietern. Technisch notwendige Cookies können für die Funktionalität der Website eingesetzt werden. Diese sind nach Art. 6 Abs. 1 lit. f DSGVO gerechtfertigt.</p></div>
 
-          <div><h2 className={h2}>7. Ihre Rechte</h2><p>Sie haben gemäß DSGVO folgende Rechte bezüglich Ihrer personenbezogenen Daten:</p>
+          <div><h2 className={h2}>7. Geschäftliche Direktansprache (Outreach)</h2><p>Im Rahmen unserer geschäftlichen Tätigkeit erheben wir Kontaktdaten von Unternehmen und deren Ansprechpartnern aus öffentlich zugänglichen Quellen (Unternehmenswebsites, Branchenverzeichnisse, Google Maps). Es handelt sich um geschäftliche Kontaktdaten: Name, geschäftliche E-Mail-Adresse, Firmenname, Geschäftsadresse, Telefonnummer.</p><p className="mt-2">Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Neukundengewinnung im B2B-Bereich). Die Daten werden ausschließlich für die einmalige geschäftliche Kontaktaufnahme mit konkretem Sachbezug verwendet.</p><p className="mt-2">Bei Widerspruch werden Ihre Daten umgehend gelöscht. Ihre E-Mail-Adresse wird auf einer Suppressionsliste geführt, um erneute Kontaktaufnahme dauerhaft zu verhindern.</p><p className="mt-2">Ihr Widerspruchsrecht: Sie können der Verarbeitung Ihrer Daten zum Zweck der Direktansprache jederzeit widersprechen (Art. 21 Abs. 2 DSGVO). Kontakt: kontakt@tigonautomation.de</p></div>
+
+          <div><h2 className={h2}>8. Ihre Rechte</h2><p>Sie haben gemäß DSGVO folgende Rechte bezüglich Ihrer personenbezogenen Daten:</p>
             <ul className="list-disc pl-5 mt-2 space-y-1">
               <li>Recht auf Auskunft (Art. 15 DSGVO)</li>
               <li>Recht auf Berichtigung (Art. 16 DSGVO)</li>
@@ -39,11 +41,11 @@ export default function Datenschutz() {
             <p className="mt-2">Kontaktieren Sie uns unter kontakt@tigonautomation.de.</p>
           </div>
 
-          <div><h2 className={h2}>8. Beschwerderecht</h2><p>Sie haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren. Die für uns zuständige Aufsichtsbehörde ist:</p><p className="mt-2">Der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Baden-Württemberg<br />Lautenschlagerstraße 20, 70173 Stuttgart<br />poststelle@lfdi.bwl.de</p></div>
+          <div><h2 className={h2}>9. Beschwerderecht</h2><p>Sie haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren. Die für uns zuständige Aufsichtsbehörde ist:</p><p className="mt-2">Der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Baden-Württemberg<br />Lautenschlagerstraße 20, 70173 Stuttgart<br />poststelle@lfdi.bwl.de</p></div>
 
-          <div><h2 className={h2}>9. Aufbewahrungsfristen</h2><p>Personenbezogene Daten werden gelöscht, sobald der Zweck der Verarbeitung entfällt und keine gesetzlichen Aufbewahrungspflichten (z.B. handels- oder steuerrechtliche Fristen von 6 bzw. 10 Jahren) der Löschung entgegenstehen.</p></div>
+          <div><h2 className={h2}>10. Aufbewahrungsfristen</h2><p>Personenbezogene Daten werden gelöscht, sobald der Zweck der Verarbeitung entfällt und keine gesetzlichen Aufbewahrungspflichten (z.B. handels- oder steuerrechtliche Fristen von 6 bzw. 10 Jahren) der Löschung entgegenstehen.</p></div>
 
-          <div><h2 className={h2}>10. Änderungen</h2><p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen, um sie an geänderte Rechtslagen oder Änderungen unserer Website anzupassen. Stand: März 2026.</p></div>
+          <div><h2 className={h2}>11. Änderungen</h2><p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen, um sie an geänderte Rechtslagen oder Änderungen unserer Website anzupassen. Stand: März 2026.</p></div>
         </div>
       </div>
       <FooterSection />
