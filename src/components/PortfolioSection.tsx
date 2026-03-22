@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 
 const projects = [
@@ -22,27 +23,27 @@ const projects = [
 ];
 
 const PortfolioSection = () => (
-  <section className="py-32 bg-[hsl(var(--background))] md:py-[120px]" id="portfolio">
-    <div className="container mx-auto px-6">
-      <motion.h2
+  <section className="py-24 md:py-32 bg-dark" id="portfolio">
+    <div className="container">
+      <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.7 }}
-        className="text-3xl md:text-5xl font-bold text-[hsl(var(--foreground))] mb-6 leading-tight letter-spacing-tight"
+        className="mb-16"
       >
-        Aktuelle Projekte
-      </motion.h2>
-      <motion.p
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6, delay: 0.1 }}
-        className="text-[hsl(var(--muted-foreground))] text-base max-w-2xl mb-16 leading-relaxed"
-      >
-        Echte Projekte, echte Ergebnisse — gebaut in Tagen, nicht Monaten.
-      </motion.p>
-      <div className="grid md:grid-cols-2 gap-8">
+        <p className="text-accent text-sm font-medium tracking-[0.2em] uppercase mb-4">
+          Portfolio
+        </p>
+        <h2 className="font-serif text-3xl md:text-5xl text-white leading-heading tracking-tightest mb-4">
+          Aktuelle Projekte
+        </h2>
+        <p className="text-white/60 text-base max-w-xl leading-relaxed">
+          Echte Projekte, echte Ergebnisse — gebaut in Tagen, nicht Monaten.
+        </p>
+      </motion.div>
+
+      <div className="space-y-5">
         {projects.map((project, i) => (
           <motion.a
             key={project.title}
@@ -53,34 +54,43 @@ const PortfolioSection = () => (
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.6, delay: i * 0.15 }}
-            className="group block rounded-xl overflow-hidden border border-[hsl(var(--border))] hover:border-[hsl(var(--primary))]/40 transition-all duration-500"
+            className="group block rounded-2xl overflow-hidden bg-dark-200 border border-white/5 hover:border-accent/20 transition-all duration-500"
           >
-            <div className="relative overflow-hidden">
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full aspect-[16/10] object-cover object-top transition-transform duration-700 group-hover:scale-[1.02]"
-              />
-            </div>
-            <div className="p-6 md:p-8 bg-[hsl(var(--card))]">
-              <div className="flex items-center gap-3 mb-3">
-                <span className="text-xs font-semibold uppercase tracking-wider text-[hsl(var(--primary))]/70">
-                  {project.category}
-                </span>
-                <span className="text-xs text-[hsl(var(--muted-foreground))]">
-                  {project.delivery}
+            <div className="grid md:grid-cols-5 gap-0">
+              <div className="md:col-span-3 relative overflow-hidden bg-dark-300">
+                <Image
+                  src={project.image}
+                  alt={`Screenshot der Website ${project.title}`}
+                  width={800}
+                  height={500}
+                  className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.02]"
+                />
+              </div>
+              <div className="md:col-span-2 p-8 md:p-10 flex flex-col justify-center">
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="text-accent text-xs font-semibold tracking-[0.15em] uppercase">
+                    {project.category}
+                  </span>
+                  <span className="text-white/40 text-xs">
+                    {project.delivery}
+                  </span>
+                </div>
+                <h3 className="font-serif text-2xl md:text-3xl text-white mb-3">
+                  {project.title}
+                </h3>
+                <p className="text-white/60 text-sm leading-relaxed mb-6">
+                  {project.desc}
+                </p>
+                <span className="text-accent text-sm font-medium inline-flex items-center gap-2 group-hover:gap-3 transition-all duration-300">
+                  Projekt ansehen
+                  <span aria-hidden="true">→</span>
                 </span>
               </div>
-              <h3 className="text-xl font-bold text-[hsl(var(--foreground))] mb-2">
-                {project.title}
-              </h3>
-              <p className="text-sm text-[hsl(var(--muted-foreground))] leading-relaxed">
-                {project.desc}
-              </p>
             </div>
           </motion.a>
         ))}
       </div>
+
       <motion.div
         initial={{ opacity: 0, y: 15 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -90,12 +100,14 @@ const PortfolioSection = () => (
       >
         <Link
           href="/kontakt"
-          className="inline-flex items-center gap-2 text-[hsl(var(--primary))] font-semibold hover:gap-3 transition-all duration-300"
+          className="inline-flex items-center gap-2 text-accent font-semibold hover:gap-3 transition-all duration-300 min-h-[44px]"
         >
-          <span>→</span> Ihr Projekt starten
+          Ihr Projekt starten
+          <span aria-hidden="true">→</span>
         </Link>
       </motion.div>
     </div>
   </section>
 );
+
 export default PortfolioSection;

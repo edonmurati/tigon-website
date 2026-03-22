@@ -5,24 +5,49 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: "1.5rem",
+        lg: "2rem",
+      },
+      screens: {
+        "2xl": "1280px",
+      },
+    },
     extend: {
       fontFamily: {
-        sans: ["Inter", "system-ui", "-apple-system", "sans-serif"],
+        sans: ["var(--font-inter)", "system-ui", "sans-serif"],
+        serif: ["var(--font-serif)", "Georgia", "serif"],
       },
       colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
-        primary: { DEFAULT: "hsl(var(--primary))", foreground: "hsl(var(--primary-foreground))" },
-        secondary: { DEFAULT: "hsl(var(--secondary))", foreground: "hsl(var(--secondary-foreground))" },
-        destructive: { DEFAULT: "hsl(var(--destructive))", foreground: "hsl(var(--destructive-foreground))" },
-        muted: { DEFAULT: "hsl(var(--muted))", foreground: "hsl(var(--muted-foreground))" },
-        accent: { DEFAULT: "hsl(var(--accent))", foreground: "hsl(var(--accent-foreground))" },
-        card: { DEFAULT: "hsl(var(--card))", foreground: "hsl(var(--card-foreground))" },
+        surface: {
+          DEFAULT: "#FAFAF8",
+          alt: "#F3F3F0",
+        },
+        dark: {
+          DEFAULT: "#08090E",
+          100: "#0F1218",
+          200: "#161B24",
+          300: "#1E2330",
+        },
+        accent: {
+          DEFAULT: "#C8964A",
+          hover: "#B5853F",
+        },
+        ink: {
+          DEFAULT: "#1A1D24",
+          light: "#4B5563",
+          muted: "#9CA3AF",
+        },
       },
-      borderRadius: { lg: "var(--radius)", md: "calc(var(--radius) - 2px)", sm: "calc(var(--radius) - 4px)" },
+      letterSpacing: {
+        tightest: "-0.04em",
+      },
+      lineHeight: {
+        display: "0.92",
+        heading: "1.1",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

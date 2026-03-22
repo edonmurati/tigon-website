@@ -8,67 +8,160 @@ const serviceAreas = [
     subtitle: "Ihr digitales Aushängeschild",
     price: "Ab €3.500",
     delivery: "48–72 Stunden",
-    items: ["Moderne Unternehmenswebsites", "Redesign veralteter Webauftritte", "Responsive Design für alle Geräte", "SEO-optimierte Struktur & Meta-Tags", "Impressum & Datenschutz vorbereitet"],
-    result: "Wir bauen zuerst — Sie entscheiden danach. Festpreis, keine Stundensätze."
+    items: [
+      "Moderne Unternehmenswebsites",
+      "Redesign veralteter Webauftritte",
+      "Responsive Design für alle Geräte",
+      "SEO-optimierte Struktur",
+      "Impressum & Datenschutz vorbereitet",
+    ],
+    result: "Wir bauen zuerst — Sie entscheiden danach.",
   },
   {
     title: "Web-App Entwicklung",
     subtitle: "Maßgeschneiderte Anwendungen",
     price: "€3.000–10.000",
-    delivery: "72 Stunden bis 2 Wochen",
-    items: ["Kundenportale & Dashboards", "Dokumentenmanagement", "Buchungssysteme", "B2B Marktplätze", "Individuelle Web-Apps"],
-    result: "Produktionsreife Software. Festpreis. In Tagen, nicht Monaten."
+    delivery: "72h bis 2 Wochen",
+    items: [
+      "Kundenportale & Dashboards",
+      "Dokumentenmanagement",
+      "Buchungssysteme",
+      "B2B Marktplätze",
+    ],
+    result: "Produktionsreife Software. Festpreis.",
   },
   {
     title: "Prozessautomatisierung & KI",
     subtitle: "Intelligente Workflows",
     price: "Ab €3.000",
     delivery: "1–2 Wochen",
-    items: ["n8n Workflow-Automatisierung", "KI-gestützte Dokumentenverarbeitung", "API-Integrationen", "Automatisierte Reports", "DSGVO-konforme Datenverarbeitung"],
-    result: "Weniger manuelle Arbeit. Mehr Kapazität für Ihr Kerngeschäft."
+    items: [
+      "n8n Workflow-Automatisierung",
+      "KI-gestützte Dokumentenverarbeitung",
+      "API-Integrationen",
+      "Automatisierte Reports",
+    ],
+    result: "Weniger manuelle Arbeit. Mehr Kerngeschäft.",
   },
 ];
 
 const ServicesSection = () => (
-  <section className="py-32 bg-[hsl(var(--muted))] md:py-[120px]" id="leistungen">
-    <div className="container mx-auto px-6">
-      <motion.h2 initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.7 }}
-        className="text-3xl md:text-5xl font-bold text-[hsl(var(--foreground))] mb-10 leading-tight letter-spacing-tight">
-        Leistungen
-      </motion.h2>
-      <div className="grid md:grid-cols-3 gap-8">
-        {serviceAreas.map((area, i) => (
-          <motion.div key={area.title} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-80px" }} transition={{ duration: 0.6, delay: i * 0.15 }}
-            className="relative rounded-xl p-px" style={{ background: "linear-gradient(160deg, hsl(var(--primary) / 0.45), hsl(var(--primary) / 0.1) 35%, hsl(var(--border)) 55%, hsl(var(--primary) / 0.2))" }}>
-            <div className="bg-[hsl(var(--card))] p-8 md:p-10 rounded-[11px] flex flex-col h-full">
-              <div className="flex-1">
-                <span className="text-xs font-semibold uppercase tracking-wider text-[hsl(var(--primary))]/70 mb-2 block">{area.subtitle}</span>
-                <h3 className="text-xl md:text-2xl font-bold text-[hsl(var(--foreground))] mb-4">{area.title}</h3>
-                <div className="flex items-baseline gap-4 mb-8">
-                  <span className="text-lg font-bold gradient-gold-text">{area.price}</span>
-                  <span className="text-xs text-[hsl(var(--muted-foreground))]">{area.delivery}</span>
-                </div>
-                <ul className="space-y-3">
-                  {area.items.map((item) => (
-                    <li key={item} className="flex items-start gap-3 text-sm text-[hsl(var(--muted-foreground))]">
-                      <span className="w-1 h-1 rounded-full bg-[hsl(var(--primary))] mt-2 shrink-0" />{item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="border-t border-[hsl(var(--primary))]/20 pt-6 mt-8">
-                <p className="text-sm font-medium text-[hsl(var(--foreground))] leading-relaxed">{area.result}</p>
-              </div>
+  <section className="py-24 md:py-32 bg-surface-alt" id="leistungen">
+    <div className="container">
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.7 }}
+        className="mb-16"
+      >
+        <p className="text-accent text-sm font-medium tracking-[0.2em] uppercase mb-4">
+          Leistungen
+        </p>
+        <h2 className="font-serif text-3xl md:text-5xl text-ink leading-heading tracking-tightest">
+          Was wir bauen
+        </h2>
+      </motion.div>
+
+      <div className="grid md:grid-cols-2 gap-5">
+        {/* Featured service — full width */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.6 }}
+          className="md:col-span-2 bg-dark rounded-2xl p-8 md:p-12 text-white relative overflow-hidden"
+        >
+          <div className="relative z-10 max-w-2xl">
+            <p className="text-accent text-xs font-semibold tracking-[0.2em] uppercase mb-3">
+              {serviceAreas[0].subtitle}
+            </p>
+            <h3 className="font-serif text-2xl md:text-4xl text-white leading-heading tracking-tight mb-4">
+              {serviceAreas[0].title}
+            </h3>
+            <div className="flex items-baseline gap-4 mb-8">
+              <span className="text-xl font-semibold text-accent">
+                {serviceAreas[0].price}
+              </span>
+              <span className="text-sm text-white/50">
+                {serviceAreas[0].delivery}
+              </span>
             </div>
+            <ul className="grid sm:grid-cols-2 gap-3 mb-8">
+              {serviceAreas[0].items.map((item) => (
+                <li
+                  key={item}
+                  className="flex items-center gap-3 text-sm text-white/70"
+                >
+                  <span className="w-1 h-1 rounded-full bg-accent shrink-0" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+            <p className="text-sm font-medium text-white/90">
+              {serviceAreas[0].result}
+            </p>
+          </div>
+          <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-accent/40 via-accent/10 to-transparent" />
+        </motion.div>
+
+        {/* Secondary services */}
+        {serviceAreas.slice(1).map((area, i) => (
+          <motion.div
+            key={area.title}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 0.6, delay: (i + 1) * 0.12 }}
+            className="bg-white rounded-2xl p-8 md:p-10 border border-ink/5"
+          >
+            <p className="text-accent text-xs font-semibold tracking-[0.2em] uppercase mb-3">
+              {area.subtitle}
+            </p>
+            <h3 className="text-xl md:text-2xl font-semibold text-ink mb-4">
+              {area.title}
+            </h3>
+            <div className="flex items-baseline gap-4 mb-6">
+              <span className="text-lg font-semibold text-accent">
+                {area.price}
+              </span>
+              <span className="text-xs text-ink-muted">{area.delivery}</span>
+            </div>
+            <ul className="space-y-2.5 mb-6">
+              {area.items.map((item) => (
+                <li
+                  key={item}
+                  className="flex items-center gap-3 text-sm text-ink-light"
+                >
+                  <span className="w-1 h-1 rounded-full bg-accent shrink-0" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+            <p className="text-sm font-medium text-ink pt-5 border-t border-ink/5">
+              {area.result}
+            </p>
           </motion.div>
         ))}
       </div>
-      <motion.div initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.3 }} className="mt-12">
-        <Link href="/kontakt" className="inline-flex items-center gap-2 text-[hsl(var(--primary))] font-semibold hover:gap-3 transition-all duration-300">
-          <span>→</span> Leistungen anfragen
+
+      <motion.div
+        initial={{ opacity: 0, y: 15 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.3 }}
+        className="mt-12"
+      >
+        <Link
+          href="/kontakt"
+          className="inline-flex items-center gap-2 text-accent font-semibold hover:gap-3 transition-all duration-300 min-h-[44px]"
+        >
+          Leistungen anfragen
+          <span aria-hidden="true">→</span>
         </Link>
       </motion.div>
     </div>
   </section>
 );
+
 export default ServicesSection;
