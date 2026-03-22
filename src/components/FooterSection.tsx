@@ -34,7 +34,7 @@ const FooterSection = () => (
         </div>
       </div>
       <div className="border-t border-[hsl(var(--primary))]/20 pt-8 flex items-center justify-between">
-        <p className="text-[#9CA3AF]/50 text-xs">© {new Date().getFullYear()} Muratovic & Cungu GbR. Alle Rechte vorbehalten.</p>
+        <p className="text-[#9CA3AF]/50 text-xs">© {new Date().getFullYear()} Tigon Automation Muratovic & Cungu GbR. Alle Rechte vorbehalten.</p>
         <div className="flex items-center gap-4">
           <Link href="/impressum" className="text-[#9CA3AF]/50 text-xs hover:text-[#9CA3AF] transition-colors duration-300">Impressum</Link>
           <Link href="/datenschutz" className="text-[#9CA3AF]/50 text-xs hover:text-[#9CA3AF] transition-colors duration-300">Datenschutz</Link>

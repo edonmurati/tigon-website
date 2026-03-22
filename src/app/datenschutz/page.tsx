@@ -9,7 +9,7 @@ export default function Datenschutz() {
       <div className="mx-auto max-w-[700px] px-6 pt-28 pb-16">
         <h1 className="text-2xl md:text-3xl font-bold text-[hsl(var(--foreground))] letter-spacing-tight mb-8">Datenschutzerklärung</h1>
         <div className="space-y-6 text-[hsl(var(--muted-foreground))] text-sm leading-relaxed">
-          <div><h2 className={h2}>1. Verantwortlicher</h2><p>Muratovic &amp; Cungu GbR</p><p>Gartenstraße 50, 70563 Stuttgart, Deutschland</p><p>E-Mail: kontakt@tigonautomation.de</p></div>
+          <div><h2 className={h2}>1. Verantwortlicher</h2><p>Tigon Automation Muratovic &amp; Cungu GbR</p><p>Gartenstraße 50, 70563 Stuttgart, Deutschland</p><p>E-Mail: kontakt@tigonautomation.de</p></div>
 
           <div><h2 className={h2}>2. Übersicht der Verarbeitungen</h2><p>Wir verarbeiten personenbezogene Daten nur, soweit dies zur Bereitstellung unserer Website und unserer Leistungen erforderlich ist. Die Verarbeitung erfolgt auf Grundlage der folgenden Rechtsgrundlagen gemäß Art. 6 Abs. 1 DSGVO:</p>
             <ul className="list-disc pl-5 mt-2 space-y-1">
