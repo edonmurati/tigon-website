@@ -11,7 +11,7 @@ export default function Impressum() {
           <div><h2 className="text-[hsl(var(--foreground))] font-semibold text-sm mb-2">Angaben gemäß § 5 TMG</h2><p>Muratovic &amp; Cungu GbR</p><p>vertreten durch: Edon Muratovic, Gent Cungu</p></div>
           <div><h2 className="text-[hsl(var(--foreground))] font-semibold text-sm mb-2">Anschrift</h2><p>Gartenstraße 50, 70563 Stuttgart, Deutschland</p></div>
           <div><h2 className="text-[hsl(var(--foreground))] font-semibold text-sm mb-2">Kontakt</h2><p>E-Mail: kontakt@tigonautomation.de · Telefon: 0176 41501758</p></div>
-          <div><h2 className="text-[hsl(var(--foreground))] font-semibold text-sm mb-2">Umsatzsteuer-ID</h2><p>gemäß §27a UStG: wird nachgereicht</p></div>
+          <div><h2 className="text-[hsl(var(--foreground))] font-semibold text-sm mb-2">Umsatzsteuer</h2><p>Nicht umsatzsteuerpflichtig gemäß § 19 Abs. 1 UStG</p></div>
         </div>
       </div>
       <FooterSection />
